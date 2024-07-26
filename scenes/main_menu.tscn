@@ -1,0 +1,118 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjibh3uf72xyq"]
+
+[ext_resource type="Texture2D" uid="uid://0gwpo8nv4gem" path="res://Free/Background/Brown.png" id="1_3kj1u"]
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_afm34"]
+[ext_resource type="Texture2D" uid="uid://oabwcumli778" path="res://Free/cooltext462749430589822.png" id="2_aosl8"]
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_afm34")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -6.0
+offset_right = -2.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3kj1u")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -390.0
+offset_top = -163.0
+offset_right = 393.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_aosl8")
+
+[node name="level1" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.484
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.531
+offset_left = -417.568
+offset_top = 6.0
+offset_right = -102.0
+offset_bottom = 70.912
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 1"
+
+[node name="level2" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.484
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.531
+offset_left = 73.4319
+offset_top = 2.0
+offset_right = 389.0
+offset_bottom = 66.912
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 2
+"
+
+[node name="level3" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.484
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.531
+offset_left = -417.568
+offset_top = 111.0
+offset_right = -102.0
+offset_bottom = 175.912
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 3"
+
+[node name="level4" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.484
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.531
+offset_left = 73.4319
+offset_top = 111.0
+offset_right = 389.0
+offset_bottom = 175.912
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 4
+"
+
+[node name="level5" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.484
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.531
+offset_left = -173.568
+offset_top = 207.0
+offset_right = 142.0
+offset_bottom = 271.912
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "Level 5"
+
+[connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="level5" to="." method="_on_level_5_pressed"]
